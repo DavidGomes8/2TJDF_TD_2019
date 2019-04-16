@@ -90,7 +90,7 @@ public class Waypoint : MonoBehaviour
 
         if (waypointPosterior != null)
         {
-            Gizmos.color = Color.green;
+            Gizmos.color = new Color(0.0f, 0.0f, 0.0f);
             Gizmos.DrawLine(transform.position, waypointPosterior.transform.position);
         }
     }
