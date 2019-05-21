@@ -42,6 +42,7 @@ public class Helicoptero : MonoBehaviour {
             Destroy(c.gameObject);
             rb.AddTorque(Vector3.up*forcaTorque*Random.RandomRange(0,5));
             rb.AddTorque(Vector3.right* forcaTorque);
+            gameObject.tag.Replace("Inimigos","");
         }
 
         else if(c.gameObject.CompareTag("Chao")) {
